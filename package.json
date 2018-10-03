@@ -1,0 +1,25 @@
+{
+  "name": "js-utilities",
+  "version": "1.0.0",
+  "description": "Js utilities functions",
+  "main": "getElementByclassName.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankitb09/JS-utilities.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Ankit Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankitb09/JS-utilities/issues"
+  },
+  "homepage": "https://github.com/Ankitb09/JS-utilities#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
