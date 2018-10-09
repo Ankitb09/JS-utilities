@@ -1,4 +1,4 @@
-const getElementByClassName = require('./getElementByClassName');
+const getElementsByClassName = require('./getElementByClassName');
 
 
 test('adds 1 + 2 to equal 3', () => {
