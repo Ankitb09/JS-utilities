@@ -7,5 +7,4 @@ const bifurcate = (arr, filter) => {
 }
 
 
-
 module.exports = bifurcate;
