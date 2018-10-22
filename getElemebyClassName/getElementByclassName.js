@@ -8,7 +8,6 @@ function getElementsByClassName(className) {
             if (node.childNodes[i].childNodes.length > 0) {
                 findNodes(node.childNodes[i])
             }
-
         }
     }
     findNodes(document);
