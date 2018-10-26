@@ -6,5 +6,4 @@ const arrayToCSV = (arr, delimiter = ",") => {
     }).join('\n')
 }
 
-
 module.exports = arrayToCSV;

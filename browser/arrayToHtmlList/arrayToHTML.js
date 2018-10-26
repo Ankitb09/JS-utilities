@@ -1,12 +1,8 @@
-function arrayToHtml(arr, id) {
-    var elem = document.getElementById(id);
-    var childElems = arr.map((curr, item, i) => {
-        return `<li>${curr}</li>`
+const arrayToHtmlList = (arr, id, elemTag) => {
+    let parentElem = document.getElementById(id);
+    parentElem.innerHTML += arr.map((item) => {
+        return `<${elemTag}>${item}</${elemTag}>`
     }).join('')
-
-    elem.innerHTML += childElems;
-    return elem
 }
 
-
-module.exports = arrayToHtml;
+module.exports = arrayToHtmlList;
