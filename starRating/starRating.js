@@ -4,7 +4,7 @@
 // - configurable(5 / 10 star)
 // - if 5 star then - 5 star with complete hover effect
 
-function starRating(elem, ratingType = 5) {
+function starRating(elem) {
     let elemUL = document.createElement('ul');
 
     for (var i = 0; i < 5; i++) {
@@ -17,9 +17,21 @@ function starRating(elem, ratingType = 5) {
 }
 
 function addEvents(elem) {
+
     elem.addEventListener('click', function () {
-        console.log(this)
+        for (var child of this.parentElement.children) {
+            child.classList.remove('active')
+        }
+
+        this.classList.add('active')
     });
+    elem.addEventListener('mouseover', function () {
+        for (var child of this.parentElement.children) {
+            child.classList.remove('active')
+        }
+
+        this.classList.add('active')
+    })
 }
 
 
