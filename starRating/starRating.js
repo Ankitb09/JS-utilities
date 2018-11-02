@@ -1,6 +1,4 @@
 
-var clickedElem;
-
 function starRating(elem) {
     let elemUL = document.createElement('ul');
     elemUL.classList.add('starRating');
@@ -32,16 +30,21 @@ function addEvents(elem) {
 
     elem.addEventListener('mouseover', function () {
         for (var child of this.parentElement.children) {
-            child.classList.remove('active')
+            child.classList.remove('hover')
         }
         console.log(this.previousSibling);
-        this.classList.add('active')
+        this.classList.add('hover')
     });
 
     elem.addEventListener('mouseout', function () {
         for (var child of this.parentElement.children) {
-            child.classList.remove('active')
+            child.classList.remove('hover')
         }
-        clickedElem.classList.add('active')
+        
     })
 }
+
+function starRateInit(elem, type=5){
+
+}
+

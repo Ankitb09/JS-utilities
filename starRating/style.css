@@ -16,7 +16,15 @@ li {
 .starRating li.active svg {
     fill: yellow
 }
+.starRating li.hover svg {
+    fill: yellow;
+    opacity: 0.5;
+}
 
 .starRating li.active~li svg {
     fill: yellow
+}
+.starRating li.hover~li svg {
+    fill: yellow;
+    opacity: 0.5;
 }
