@@ -1,0 +1,30 @@
+ul,
+li {
+    list-style: none;
+}
+
+.starRating {
+    direction: rtl;
+    float: left;
+}
+
+.starRating li {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.starRating li.active svg {
+    fill: yellow
+}
+.starRating li.hover svg {
+    fill: yellow;
+    opacity: 0.5;
+}
+
+.starRating li.active~li svg {
+    fill: yellow
+}
+.starRating li.hover~li svg {
+    fill: yellow;
+    opacity: 0.5;
+}
