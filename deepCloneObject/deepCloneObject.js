@@ -1,10 +1,11 @@
-const deepClone = obj => {
-
-    let clone = Object.assign({}, obj);
-    Object.keys(clone).forEach(
-        key => (clone[key] = typeof obj[key] === 'object' ? deepClone(obj[key]) : obj[key])
-    );
-    return Array.isArray(obj) ? (clone.length = obj.length) && Array.from(clone) : clone;
-};
+const deepClone = (obj,newObj) => {
+    Object.keys(obj).map((key) => {
+        if(Object.prototype.toString.call(obj[key]) == '[object object]'){
+            return deepClone(obj[key],newObj[key]);
+        }
+        newObj[key] = obj[key]
+    })
+    return newObj;
+}
 
 module.exports = deepClone;
