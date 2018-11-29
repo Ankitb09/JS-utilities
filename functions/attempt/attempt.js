@@ -1,4 +1,4 @@
-function attempt(fn, arg) {
+function attempt(fn) {
     var args = Array.prototype.slice.call(arguments);
     args = args.splice(1)
     try {
