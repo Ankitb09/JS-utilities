@@ -7,10 +7,12 @@
 
 <body>
     <div id="starCont"></div>
+    <div id="starCont2"></div>
     <script src="starRating.js"></script>
     <script>
         var ele = document.getElementById('starCont')
-        createRating(ele)
+        var rate = starRate.init(ele);
+        var rate2 = starRate.init(starCont2);
     </script>
 </body>
 
